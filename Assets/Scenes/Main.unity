@@ -140,6 +140,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09269de7dbb94e844832f85d1d3b5216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballPrefab: {fileID: 1461381858404760, guid: bf7efba667b958f448ca3206779e3900, type: 2}
+  sprites:
+  - {fileID: 21300000, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300002, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300004, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300006, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300008, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300010, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300012, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300014, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300016, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300018, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300020, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300022, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300024, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300026, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300028, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300030, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300032, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300034, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300036, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300038, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300040, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300042, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300044, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300046, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300048, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300050, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300052, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300054, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300056, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
+  - {fileID: 21300058, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
 --- !u!4 &53761884
 Transform:
   m_ObjectHideFlags: 0
