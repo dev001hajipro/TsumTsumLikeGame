@@ -8,7 +8,10 @@ public class SpawnerBehaviour : MonoBehaviour
     public GameObject ballPrefab;
     public Sprite[] sprites;
 
-    void Start() => StartCoroutine(Spawn(50));
+    void Start()
+    {
+        StartCoroutine(Spawn(50));
+    }
 
     IEnumerator Spawn(int count)
     {
