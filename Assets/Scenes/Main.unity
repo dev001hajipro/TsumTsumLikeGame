@@ -147,31 +147,6 @@ MonoBehaviour:
   - {fileID: 21300004, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
   - {fileID: 21300006, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
   - {fileID: 21300008, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300010, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300012, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300014, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300016, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300018, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300020, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300022, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300024, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300026, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300028, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300030, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300032, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300034, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300036, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300038, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300040, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300042, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300044, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300046, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300048, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300050, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300052, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300054, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300056, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
-  - {fileID: 21300058, guid: 43c3865333ca7d14ea72306f70b4bbcc, type: 3}
 --- !u!4 &53761884
 Transform:
   m_ObjectHideFlags: 0
@@ -552,7 +527,7 @@ GameObject:
   - component: {fileID: 1575817417}
   - component: {fileID: 1575817416}
   m_Layer: 0
-  m_Name: SelectedTargetManager
+  m_Name: SelectingAnimalBallsManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
