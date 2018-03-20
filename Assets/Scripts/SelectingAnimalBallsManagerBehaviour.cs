@@ -70,7 +70,8 @@ public class SelectingAnimalBallsManagerBehaviour : MonoBehaviour {
     {
         if (IsScoreing())
         {
-            CalcPoint();
+            // TODO スコアイベントを発火して、scoreTextオブジェクトで受信したい。
+            GameObject.Find("ScoreText").GetComponent<ScoreTextBehaviour>().Add(CalcPoint());
             DestroyAnimalBalls();
         }
         return this;
