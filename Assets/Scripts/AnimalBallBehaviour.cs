@@ -16,12 +16,12 @@ public class AnimalBallBehaviour : MonoBehaviour,
     #region IPointer Handlers
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("Reset Mgr.List");
+        Debug.Log("Reset Mgr.List mgr.Clear()");
         mgr.Clear();
         mgr.IsSelecting = true;
         if (mgr.IsValid(this.gameObject))
         {
-            Debug.Log("Added gameobject.");
+            Debug.Log("Added gameobject by OnPointerDown ");
             mgr.Add(this.gameObject);
         }
     }
@@ -34,7 +34,7 @@ public class AnimalBallBehaviour : MonoBehaviour,
             Debug.Log("OnPointerEnter isSelecting");
             if (mgr.IsValid(this.gameObject))
             {
-                Debug.Log("Added gameobject.");
+                Debug.Log("Added gameobject by OnPointerEnter");
                 mgr.Add(this.gameObject);
             }
         }
