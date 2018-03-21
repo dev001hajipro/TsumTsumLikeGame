@@ -26,7 +26,15 @@ public class AnimalBallBehaviour : MonoBehaviour,
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        manager.Calc().StopSelecting();
+        manager.StopSelecting();
     }
     #endregion
+
+    public GameObject DoTransparency(float alpha = 1f)
+    {
+        Color c = GetComponent<SpriteRenderer>().color;
+        c.a = alpha;
+        GetComponent<SpriteRenderer>().color = c;
+        return gameObject;
+    }
 }

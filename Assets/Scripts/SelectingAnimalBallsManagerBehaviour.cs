@@ -14,17 +14,10 @@ public class SelectingAnimalBallsManagerBehaviour : MonoBehaviour {
         selectingBalls = new List<GameObject>();
     }
 
-    private void Init()
-    {
-        selectingBalls.ForEach(o => DoTransparency(o, 1f));
-        selectingBalls.Clear();
-        IsSelecting = false;
-    }
-
     private void Add(GameObject item)
     {
         if (!selectingBalls.Contains(item))
-            selectingBalls.Add(DoTransparency(item, 0.5f));
+            selectingBalls.Add(item.GetComponent<AnimalBallBehaviour>().DoTransparency(0.5f));
     }
     private bool IsValid(GameObject item)
     {
@@ -43,18 +36,8 @@ public class SelectingAnimalBallsManagerBehaviour : MonoBehaviour {
         selectingBalls.Clear();
     }
 
-    // TODO animalballへ透過イベントを送り処理すべき?
-    private GameObject DoTransparency(GameObject o, float alpha = 1f)
-    {
-        Color c = o.GetComponent<SpriteRenderer>().color;
-        c.a = alpha;
-        o.GetComponent<SpriteRenderer>().color = c;
-        return o;
-    }
-
     public void StartSelecting(GameObject o)
     {
-        Init();
         IsSelecting = true;
         if (IsValid(o))
             Add(o);
@@ -66,18 +49,25 @@ public class SelectingAnimalBallsManagerBehaviour : MonoBehaviour {
                 Add(o);
     }
 
-    public SelectingAnimalBallsManagerBehaviour Calc()
+    public void StopSelecting()
+    {
+        Calc();
+        ResetBalls();
+    }
+
+    private void Calc()
     {
         if (IsScoreing())
         {
-            // TODO スコアイベントを発火して、scoreTextオブジェクトで受信したい。
             GameObject.Find("ScoreText").GetComponent<ScoreTextBehaviour>().Add(CalcPoint());
             DestroyAnimalBalls();
         }
-        return this;
     }
-    public void StopSelecting()
+
+    private void ResetBalls()
     {
-        Init();
+        selectingBalls.ForEach(o => o.GetComponent<AnimalBallBehaviour>().DoTransparency(1f));
+        selectingBalls.Clear();
+        IsSelecting = false;
     }
 }
