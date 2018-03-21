@@ -9,9 +9,9 @@ public class ScoreTextBehaviour : MonoBehaviour {
     private Text scoreText;
     private int score = 0;
 
-	void Start () {
+    void Start () {
         scoreText = GetComponent<Text>();
-	}
+    }
 
     public void Add(int point)
     {
