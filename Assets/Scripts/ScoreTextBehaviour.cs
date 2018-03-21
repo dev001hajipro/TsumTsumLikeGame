@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof (Text))]
 public class ScoreTextBehaviour : MonoBehaviour {
 
     private Text scoreText;
@@ -10,10 +11,6 @@ public class ScoreTextBehaviour : MonoBehaviour {
 
 	void Start () {
         scoreText = GetComponent<Text>();
-	}
-	
-	void Update () {
-		
 	}
 
     public void Add(int point)

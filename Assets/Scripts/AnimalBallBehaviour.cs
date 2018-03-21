@@ -16,12 +16,12 @@ public class AnimalBallBehaviour : MonoBehaviour,
     #region IPointer Handlers
     public void OnPointerDown(PointerEventData eventData)
     {
-        manager.StartSelecting(this.gameObject);
+        manager.StartSelecting(eventData.pointerCurrentRaycast.gameObject);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        manager.ContinueSelecting(this.gameObject);
+        manager.ContinueSelecting(eventData.pointerCurrentRaycast.gameObject);
     }
 
     public void OnPointerUp(PointerEventData eventData)
