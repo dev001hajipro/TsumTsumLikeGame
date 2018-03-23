@@ -51,6 +51,7 @@ public class SelectingAnimalBallsManagerBehaviour : MonoBehaviour {
 
     public void StopSelecting()
     {
+        GameObject.Find("Spawner").GetComponent<SpawnerBehaviour>().Append(selectingBalls.Count);
         Calc();
         ResetBalls();
     }
