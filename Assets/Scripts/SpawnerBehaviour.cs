@@ -26,10 +26,16 @@ public class SpawnerBehaviour : MonoBehaviour
         return o;
     }
 
-    public void ReSpawn()
+    public void ReSpawn(int count = 50)
     {
         DestroyChildren();
-        StartCoroutine(Spawn(50));
+        StartCoroutine(Spawn(count));
+    }
+
+    public void Append(int count)
+    {
+        Debug.Log("append:" + count);
+        StartCoroutine(Spawn(count));
     }
 
     private void DestroyChildren() => transform.Cast<Transform>().ToList().ForEach(t => Destroy(t.gameObject));
